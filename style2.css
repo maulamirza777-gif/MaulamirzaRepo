@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #f0f8ff; 
+    color: #2c3e50;
+    line-height: 1.7; 
+}
+
+
+#header {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 1em; 
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff; 
+}
+
+#header p {
+    margin: 0.5em 0 0;
+    color: #ffffff; 
+    font-size: 1.1em;
+}
+
+
+#konten-utama {
+    max-width: 800px; 
+    margin: 2em auto; 
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px; 
+    padding: 2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+.foto-profil {
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    margin: 0 1.5em 0.5em 0;
+    border: 3px solid #007bff; 
+    object-fit: cover; 
+}
+
+
+#kontak ul {
+    list-style: none;
+    padding: 0;
+}
+
+#kontak a {
+    color:  #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+#kontak a:hover {
+    color: #0056b3; 
+}
+
+
+#footer {
+    text-align: center;
+    padding: 2em 1em;
+    margin-top: 2em;
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+/* --- Penyesuaian untuk Layar Kecil (HP) --- */
+@media (max-width: 600px) {
+    .foto-profil {
+        float: none; /* Hentikan float pada layar kecil */
+        display: block;
+        margin: 0 auto 1.5em; /* Foto menjadi di tengah */
+        width: 150px;
+        height: 150px;
+    }
+    
+    #header h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        padding: 1.5em;
+    }
+}
